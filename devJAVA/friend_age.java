@@ -7,7 +7,7 @@
 */
 import java.util.Scanner;
 
-public class edades {
+public class friendAge {
 
     public static void main(String args[]) {
 
