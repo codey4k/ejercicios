@@ -1,6 +1,6 @@
 function closure() {
 
-    var uno = 'Hola'
+    var uno = ' mundo'
 
     var dos = x => x + uno
 
@@ -10,4 +10,4 @@ function closure() {
 
 var saludando = closure()
 
-console.log( saludando(' mundo') )
+console.log( saludando('Hola') )
