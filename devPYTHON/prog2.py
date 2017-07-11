@@ -1,4 +1,4 @@
-#Programa
+#Programa con funcion simple
 
 def function(x):
     return x + 2
