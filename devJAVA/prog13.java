@@ -1,3 +1,7 @@
+/*
+    Ejercicio con vectores
+*/
+
 import java.util.Scanner;
 class ejercicio1 {
     

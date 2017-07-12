@@ -1,3 +1,7 @@
+/*
+    Closure
+*/
+
 function closure() {
 
     var uno = ' mundo'

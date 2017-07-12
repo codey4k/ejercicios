@@ -1,3 +1,7 @@
+/*
+    Varriables globales
+*/
+
 import java.util.Scanner;
 
 public class ejercicioglobvar {

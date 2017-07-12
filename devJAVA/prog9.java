@@ -1,3 +1,7 @@
+/*
+    Dados
+*/
+
 import java.util.Scanner;
 
 class dados {
