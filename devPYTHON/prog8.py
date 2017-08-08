@@ -1,5 +1,15 @@
-for i in "Y4k13k":
-    if type(i) == 'int':
-        pass
-    else:
-        print(i)
+#generador
+
+def genera(limite):
+    num = 1
+    while num <= limite:
+        yield num * 2
+        num = num + 1
+
+generador = genera(10)
+
+print("primer valor")
+print(next(generador))
+
+print("segundo valor")
+print(next(generador))
