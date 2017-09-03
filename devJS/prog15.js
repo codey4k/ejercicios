@@ -1,1 +1,3 @@
-//funcion que devuelva los numeros primos
+let getSaludo = n => 'Hey ' + n + '!' 
+
+console.log(getSaludo('Luis'))
