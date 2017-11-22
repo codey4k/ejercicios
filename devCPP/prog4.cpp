@@ -5,9 +5,10 @@ using namespace std;
 
 int main() {
     
-    string name = "Y4k";
+    string name = "Y4k",
+           fullname = "CodeY4k";
 
-    cout << name << endl;
+    cout << name  + fullname << endl;
 
     return 0;
 }
