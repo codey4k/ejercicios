@@ -15,4 +15,5 @@ function getUser() {
 }
 
 getUser()
-    .then(datos => console.log(datos[8].name))
+    .then(datos => console.log(datos[3].name))
+    .catch(Error('fallo'))
