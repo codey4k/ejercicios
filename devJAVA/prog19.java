@@ -20,10 +20,15 @@ class Excepciones {
                     System.out.println("Tu valor es valido");
                 }
             }
-            catch(InputMismatchException ex){
+            catch(Exception ex){
                 dato.nextLine();
-                System.out.print("Valor invalido");
+                System.out.println("Valor invalido");
             }
+            
+            // catch(InputMismatchException ex){
+            //     dato.nextLine();
+            //     System.out.println("Valor invalido");
+            // }
         }
     }
     
