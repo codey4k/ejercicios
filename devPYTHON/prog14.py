@@ -2,10 +2,11 @@
     Validacion de password
 """
 
-password = raw_input("Ingresa contrasena ")
+# password = raw_input("Ingresa contrasena ")
 
 def validador(n):
     while True:
+        passw = raw_input("ingresa tu pass")
         if len(n) >= 8:
             print("Contrasena valida")
             break
@@ -14,4 +15,4 @@ def validador(n):
             break
     
     
-validador(password)
+# validador()
