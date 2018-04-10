@@ -15,5 +15,3 @@
     $persona = new Persona('Yakiel', 'Forta');
 
     echo $persona->fullName();
-
-?>
