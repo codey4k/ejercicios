@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define MAX 10
+
 void calculo();
 
 /*int ingresaValor();*/
@@ -12,7 +14,7 @@ int main() {
 void calculo() {
     // printf("Ingresa valore 10 digitos");
     
-    int *pares, *impares, numero;
+    int pares = 0, impares = 0, numero;
     int control = 1;
 
     while(control <= 10) {
@@ -20,11 +22,13 @@ void calculo() {
         scanf("%d", &numero);
 
         if(numero % 2 == 0) {
-            pares[control - 1] = numero;
+            pares += 1;
         }
         else {
-            impares[control - 1] = numero;
+            impares += 1;
         }
         control += 1;
     }
+    
+    printf("Ingresaste: %d numeros pares y %d numeros impares\n",pares, impares);
 }
