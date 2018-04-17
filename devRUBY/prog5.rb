@@ -8,3 +8,5 @@ while cont < 3
     array[cont] = n
     cont += 1
 end
+
+print "#{array}\n"
