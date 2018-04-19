@@ -8,6 +8,7 @@ People
 
 let personas = [...People]
 
-personas
-
+for(let i = 0; i < personas.length; i++){
+    console.log(personas[i])
+}
 // console.log(People.has("Y4k"))
