@@ -7,7 +7,6 @@ palabra = raw_input('Ingresa la palabra clave ')
 def analizar():
     analisis = open(archivo, 'r')
     
-    
     if palabra in analisis.read():
         print('Se encontro el codigo...')
         analisis.close()

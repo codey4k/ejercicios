@@ -1,3 +1,8 @@
 @echo off
 
-pause >nul
+goto :main
+
+
+:main
+    echo Hello world
+goto :eof
