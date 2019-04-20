@@ -2,9 +2,18 @@
 #include <string.h>
 
 
-unsigned char caracter[] = "Hola mundo";
+unsigned char cadena[] = "Hola mundo";
+
+void func(void);
 
 int main(int argc, char *argv) {
-    *(void(*)(void))();
+    
+    void (*ejem)(void) = {func};
+    (*ejem)();
+    
     return 0;
+}
+
+void func(void) {
+    printf("%s\n", cadena);
 }
