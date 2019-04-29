@@ -5,10 +5,9 @@ section .data ; data section
 
 ;section .text ; code section
 
-global _start
 
 section .text 
-   
+global _start   
 _start:
     mov eax, 4      ;0x4 Sys call write
     mov ebx, 1      ;0x1 Sys call exit
@@ -18,7 +17,7 @@ _start:
 
 ;asegurarse de que el programa sale
     mov eax, 1      ;Sys call exit
-    mov ebx, 3      ;Valor de retorno, puede ser cualquier entero
+    mov ebx, 0      ;Valor de retorno, puede ser cualquier entero
     int 0x80        ;Interruption call
 
 
