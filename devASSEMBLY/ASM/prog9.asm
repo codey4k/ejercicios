@@ -1,21 +1,16 @@
 section .text
 global _start    
     procedimiento:
-        
+       
+        pop ecx
         xor eax, eax
         mov al, 0x04
         xor ebx, ebx
         mov bl, 0x01
-        pop ecx
         xor edx, edx
-        mov dl, 0x11
+        mov dl, 0x12
         int 0x80
         
-        xor eax, eax
-        mov al, 0x01
-        xor ebx, ebx
-        mov bl, 0x01
-        int 0x80
         ret
 
     _start:
@@ -23,9 +18,11 @@ global _start
 
         mensaje:
             call procedimiento
-            len equ $-logrado
-            logrado db "funcionando", 0x0a
-            len equ $-logrado           
+            db "funcionando", 0x0A
 
-section .data
+        finalizar:
+            xor eax, eax
+            inc al
+            int 0x80
+
     ;vacio
