@@ -18,11 +18,11 @@ section .data
     msj1 db "Escribe un numero", 0x0A
     len_msj1 equ $-msj1
 
-    array db 0,0,0,0
+    array db 0, 1, 2, 3
     len_array equ $-array
 
 section .bss
-    res resb 2
+    var resb 2
 
 section .text
 global _start
@@ -30,15 +30,18 @@ global _start
     _start:
     
     inicio:
-        imprimir msj1, len_msj1
+        
+        add ebx, [array+2]
+        add ebx, '0'
+        mov [var], ebx
 
-        teclado res, 2
-        
-        ;imprimir msj2, len_msj2
-        
-        imprimir res, 2
+        mov edx, 1
+        mov ecx, var
+        mov ebx, 1
+        mov eax, 4
+        int 0x80
 
     salir:
         mov eax, 0x01
-        xor ebx, ebx
+        ;xor ebx, ebx
         int 0x80

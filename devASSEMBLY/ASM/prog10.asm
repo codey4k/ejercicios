@@ -2,18 +2,13 @@ section .text
 global _start
     _start:
   
-    inicio:
-        xor eax, eax
-        mov ax, [nombre]
-        push ax
-
     imrimir:
         xor eax, eax
         mov al, 4
         xor ebx, ebx
         mov bl, 1
-        pop ecx
-        xor edx, ebx
+        mov ecx, nombre 
+        xor edx, 2
         mov dl, 4
         int 0x80
 
@@ -23,4 +18,4 @@ global _start
         int 0x80
 
 section .data
-    nombre db "Y4k", 0x0A
+    nombre db "reer", 0x0A
