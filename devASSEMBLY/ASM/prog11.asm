@@ -34,12 +34,9 @@ global _start
         add ebx, [array+2]
         add ebx, '0'
         mov [var], ebx
-
-        mov edx, 1
-        mov ecx, var
-        mov ebx, 1
-        mov eax, 4
-        int 0x80
+        
+        
+        imprimir var, 1
 
     salir:
         mov eax, 0x01
