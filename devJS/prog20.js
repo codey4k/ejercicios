@@ -5,7 +5,7 @@ const lista = ['Uno','Dos','Tres']
 function recursive(n) {
     let variable = []
     if(n < 5) {
-        variable[n] = 'culo'
+        variable[n] = 'resultado'
         return recursive(n+1)
     }
     else {
