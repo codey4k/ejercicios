@@ -1,0 +1,4 @@
+program Prog
+
+begin
+end.
